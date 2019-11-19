@@ -57,3 +57,4 @@ echo "Add pip3.7 as system default python-pip version..."
 ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip
 echo "Replace yum and related configuration to avoid fatal error..."
 sed -i -e "s%#!/usr/bin/python%#!/usr/bin/python2%g" /usr/bin/yum
+sed -i -e "s%#!/usr/bin/python%#!/usr/bin/python2%g" /usr/libexec/urlgrabber-ext-down
